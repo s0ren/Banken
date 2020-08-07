@@ -4,6 +4,23 @@ using Banken;
 
 namespace BankenTest
 {
+    public class ForbrugslånTest 
+    {
+        Forbrugslån f;
+
+        public ForbrugslånTest()
+        {
+            f = new Forbrugslån(0);
+        }
+
+        [Fact]
+        public void TestConstructMed100kr()
+        {
+            f = new Forbrugslån(-100);
+            Assert.Equal(-100, f.saldo);
+        }
+    }
+
     public class KontoTest : IDisposable
     {
         Konto k;
