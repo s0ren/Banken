@@ -41,6 +41,13 @@ namespace BankenTest
         }
 
         [Fact]
+        public void TestConstructMedMinus100kr()
+        {
+            k = new Konto(-100);
+            Assert.Equal(0, k.saldo);
+        }
+
+        [Fact]
         public void TestIndsæt0kr()
         {
             //Konto k = new Konto(0);
