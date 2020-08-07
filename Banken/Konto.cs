@@ -29,4 +29,12 @@ namespace Banken
         }
 
     }
+
+    public class Forbrugslån : Konto
+    {
+        public Forbrugslån(double saldo) : base(saldo)
+        {
+
+        }
+    }
 }
