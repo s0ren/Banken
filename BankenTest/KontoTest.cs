@@ -10,7 +10,7 @@ namespace BankenTest
 
         public ForbrugslånTest()
         {
-            f = new Forbrugslån(0);
+            f = new Forbrugslån(-100);
         }
 
         [Fact]
